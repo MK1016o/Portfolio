@@ -51,7 +51,7 @@ function skillMedia() {
     skillContainer.append(ul);
 }
 
-mediaQuery2.addListener(() => {
+mediaQuery2.addEventListener('resize', () => {
     if(mediaQuery2.matches) {
         console.log(skillContainer);
         skillMedia();
@@ -140,7 +140,7 @@ function mediaText() {
     navContact.innerText = 'Contact';
 }
 
-mediaQuery.addListener(() => {
+mediaQuery.addEventListener('resize', () => {
     if(mediaQuery.matches) {
         none();
         home.classList.remove('none');
