@@ -18,7 +18,6 @@ const navLists = document.querySelectorAll('.navlist');
 
 const mediaQuery = window.matchMedia('(max-width: 896px)');
 
-const mediaQuery2 = window.matchMedia('(max-width: 623px)');
 
 function liSkill(src, data) {
     const li = document.createElement('li');
@@ -51,8 +50,8 @@ function skillMedia() {
     skillContainer.append(ul);
 }
 
-mediaQuery2.addEventListener('resize', () => {
-    if(mediaQuery2.matches) {
+window.addEventListener('resize',() => {
+    if(window.matchMedia('(max-width: 623px)').matches) {
         console.log(skillContainer);
         skillMedia();
     } else {
@@ -140,8 +139,8 @@ function mediaText() {
     navContact.innerText = 'Contact';
 }
 
-mediaQuery.addEventListener('resize', () => {
-    if(mediaQuery.matches) {
+window.addEventListener('resize', () => {
+    if(window.matchMedia('(max-width: 896px)').matches) {
         none();
         home.classList.remove('none');
         mediaIcon();
