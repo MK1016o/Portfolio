@@ -491,10 +491,10 @@ textarea {
 
 @media screen and (max-width: 703px) {
     .nav-media {
-        bottom: 10vh;
         top: auto;
         right: auto;
         left: auto;
+        bottom: 10vh;
         width: 100vw;
         justify-content: center;
         align-items: center;
