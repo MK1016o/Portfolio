@@ -16,8 +16,6 @@ const skillContainer = document.querySelector('.skill-container');
 
 const navLists = document.querySelectorAll('.navlist');
 
-const mediaQuery = window.matchMedia('(max-width: 896px)');
-
 
 function liSkill(src, data) {
     const li = document.createElement('li');
@@ -48,11 +46,12 @@ function skillMedia() {
     ul.appendChild(liSkill('github.png', 'GitHub'));
     skillContainer.innerHTML = '';
     skillContainer.append(ul);
-}
-
-window.addEventListener('resize',() => {
-    if(window.matchMedia('(max-width: 623px)').matches) {
-        console.log(skillContainer);
+  }
+  
+  const mediaQuery2 = () => {
+    const screenWidth = window.innerWidth;
+    if(screenWidth <= 623) {
+      console.log(skillContainer);
         skillMedia();
     } else {
         skillContainer.innerHTML = `<div class="box">
@@ -101,7 +100,9 @@ window.addEventListener('resize',() => {
       </div>`
         ;
     }
-})
+};
+mediaQuery2();
+window.addEventListener('resize', mediaQuery2);
 
 function addNav() {
     for(let i = 0; i < navLists.length; i ++) {
@@ -129,19 +130,20 @@ function mediaIcon() {
     navEducation.innerHTML = '<i class="fa-solid fa-user-graduate"></i>';
     navProject.innerHTML = '<i class="fa-solid fa-diagram-project"></i>';
     navContact.innerHTML = '<i class="fa-solid fa-paper-plane"></i>';
-}
-function mediaText() {
+  }
+  function mediaText() {
     navHome.innerText = 'Home';
     navAbout.innerText = 'About';
     navSkill.innerText = 'Skills';
     navEducation.innerText = 'Education';
     navProject.innerText = 'Projects';
     navContact.innerText = 'Contact';
-}
-
-window.addEventListener('resize', () => {
-    if(window.matchMedia('(max-width: 896px)').matches) {
-        none();
+  }
+  
+  const mediaQuery = () => {
+    const screenWidth = window.innerWidth;
+    if(screenWidth <= 896) {
+      none();
         home.classList.remove('none');
         mediaIcon();
         navHome.addEventListener('click', () => {
@@ -186,4 +188,5 @@ window.addEventListener('resize', () => {
         contact.classList.remove('none');
     
     }
-})
+}
+window.addEventListener('resize', mediaQuery);

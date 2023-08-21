@@ -480,6 +480,8 @@ textarea {
     }
     .options a {
         margin: 0.3rem;
+        /* width: 6vh; */
+        height: 6vh;
     }
     .red {
         margin-left: 8rem;
