@@ -189,4 +189,5 @@ function mediaIcon() {
     
     }
 }
+mediaQuery();
 window.addEventListener('resize', mediaQuery);
