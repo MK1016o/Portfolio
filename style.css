@@ -411,11 +411,12 @@ textarea {
 
 #about, #skills, #education, #projects, #contact {
     padding-top: 10vh;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 .nav-media {
     right: 3rem;
+    top: auto;
     width: auto;
     height: auto;
     position: fixed;
