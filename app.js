@@ -147,8 +147,9 @@ function mediaIcon() {
       if(start == 1) {
         none();
           home.classList.remove('none');
-          mediaIcon();  
-      }
+          start ++;  
+        }
+        mediaIcon();
         navHome.addEventListener('click', () => {
             none();
             home.classList.remove('none');
