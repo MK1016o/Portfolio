@@ -10,7 +10,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: rgb(246, 246, 195);
+    background: rgb(175,237,152);
+    background: radial-gradient(circle, rgba(175,237,152,1) 0%, rgba(148,197,233,1) 100%);
+    background-repeat: no-repeat;
 }
 .nav {
     padding: 1rem;
@@ -23,6 +25,7 @@ body {
     z-index: 5;
     width: 100vw;
     min-height: 10vh;
+    opacity: 0.8;
 }
 .name {
     color: #27AE60;
@@ -60,7 +63,7 @@ a i {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 .profile {
     padding-inline: 1.5rem;
@@ -98,9 +101,9 @@ button:hover {
     transform: scale(1.1);
 }
 .profile-img img {
+    border-radius: 50%;
     width: 30rem;
     height: 30rem;
-    border-radius: 50%;
 }
 
 .about {
@@ -176,7 +179,7 @@ ul li span {
 }
 
 .skills {
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .skills h3 {
     text-align: start;
@@ -206,7 +209,7 @@ ul li span {
 }
 
 .education {
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .edu-container {
     display: flex;
@@ -282,7 +285,6 @@ ul li span {
     height: 100%;
     object-fit: contain;
     border-radius: 15px;
-    /* position: absolute; */
     top: 0;
     left: 0;
     transition: all 1s ease-in-out;
@@ -338,7 +340,7 @@ ul li span {
 }
  
 .contacts {
-    min-height: 80vh;
+    min-height: 100vh;
 }
 form {
     display: flex;
@@ -452,6 +454,20 @@ textarea {
 .skill-list:hover {
     transform: scale(1.2);
 }
+.contact-link {
+    margin: 3rem;
+    text-align: center;
+}
+.contact-link a i {
+    color: #000;
+    font-size: 3rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.contact-link a i:hover {
+    opacity: 1;
+    font-size: 3.5rem;
+}
 
 @media screen and (max-width: 896px) {
     .links {
@@ -486,6 +502,9 @@ textarea {
     }
     .red {
         margin-left: 8rem;
+    }
+    .year {
+        width: 35%;
     }
 }
 
@@ -527,5 +546,11 @@ textarea {
     .proj {
         width: 50vw;
         height: 50vw;
+    }
+    .profile-img {
+        display: none;
+    }
+    .profile {
+        padding-inline: 2rem;
     }
 }
