@@ -144,8 +144,8 @@ function mediaIcon() {
     const screenWidth = window.innerWidth;
     if(screenWidth <= 896) {
       none();
-        // home.classList.remove('none');
-        // mediaIcon();
+        home.classList.remove('none');
+        mediaIcon();
         navHome.addEventListener('click', () => {
             none();
             home.classList.remove('none');
