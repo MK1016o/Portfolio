@@ -13,6 +13,7 @@ body {
     background: rgb(175,237,152);
     background: radial-gradient(circle, rgba(175,237,152,1) 0%, rgba(148,197,233,1) 100%);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 .nav {
     padding: 1rem;
@@ -249,7 +250,7 @@ ul li span {
 .year {
     background-color: #27AE60;
     border-radius: 80px;
-    width: 25%;
+    display: inline;
     padding: 0.5rem;
     color: white;
     font-size: 1.2rem;
@@ -391,23 +392,6 @@ textarea {
 }
 
 
-@media screen and (max-width: 1020px) {
-    .name {
-        display: none;
-    }
-    .large-text {
-        font-size: 2.5rem;
-    }
-    .small-text {
-        font-size: 1rem;
-    }
-    .input-info {
-        flex-direction: column;
-    }   
-    .input-info input, #subject, textarea {
-        width: 60vw;
-    }
-}
 
 #about, #skills, #education, #projects, #contact {
     padding-top: 10vh;
@@ -426,8 +410,6 @@ textarea {
 .navigat {
     background-color: #191D2B;
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -470,6 +452,24 @@ textarea {
     font-size: 3.5rem;
 }
 
+@media screen and (max-width: 1020px) {
+    .name {
+        display: none;
+    }
+    .large-text {
+        font-size: 2.5rem;
+    }
+    .small-text {
+        font-size: 1rem;
+    }
+    .input-info {
+        flex-direction: column;
+    }   
+    .input-info input, #subject, textarea {
+        width: 60vw;
+    }
+}
+
 @media screen and (max-width: 896px) {
     .links {
         display: none;
@@ -480,8 +480,7 @@ textarea {
     }
     #about, #skills, #education, #projects, #contact {
         padding-top: 0;
-    }  
-    
+    }
 }
 
 @media screen and (max-width: 623px) {
@@ -501,14 +500,9 @@ textarea {
     .options a {
         margin: 0;
         margin: 0.3rem;
-        width: 8vh;
-        height: 8vh;
     }
     .red {
         margin-left: 8rem;
-    }
-    .year {
-        width: 35%;
     }
 }
 
