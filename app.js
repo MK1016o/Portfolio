@@ -16,6 +16,7 @@ const skillContainer = document.querySelector('.skill-container');
 
 const navLists = document.querySelectorAll('.navlist');
 
+let start = 1;
 
 function liSkill(src, data) {
     const li = document.createElement('li');
@@ -143,9 +144,11 @@ function mediaIcon() {
   const mediaQuery = () => {
     const screenWidth = window.innerWidth;
     if(screenWidth <= 896) {
-      none();
-        home.classList.remove('none');
-        mediaIcon();
+      if(start == 1) {
+        none();
+          home.classList.remove('none');
+          mediaIcon();  
+      }
         navHome.addEventListener('click', () => {
             none();
             home.classList.remove('none');
