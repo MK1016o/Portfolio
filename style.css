@@ -542,6 +542,9 @@ textarea {
     .edu-box {
         width: 90%;
     }
+    .input-info input, #subject, textarea {
+        width: 80vw;
+    }
 }
 @media screen and (max-width: 430px) {
     .proj {
