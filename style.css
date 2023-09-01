@@ -491,6 +491,9 @@ textarea {
     .btn-about {
         display: inline;
     }
+    .right-about {
+        margin: 0;
+    }
     .options {
         align-items: center;
         justify-content: center;
@@ -514,7 +517,7 @@ textarea {
         top: auto;
         right: auto;
         left: auto;
-        bottom: 10vh;
+        bottom: 3vh;
         width: 100vw;
         justify-content: center;
         align-items: center;
@@ -556,5 +559,11 @@ textarea {
     }
     .profile {
         padding-inline: 2rem;
+    }
+    .right-about {
+        width: 50%;
+        margin: 2rem;
+        flex-direction: column;
+        gap: 0;
     }
 }
