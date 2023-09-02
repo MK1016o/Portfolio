@@ -43,7 +43,7 @@
     .home {
         flex-direction: column;
     }
-    #home, #about, #skills, #education, #projects, #contact {
+    #about, #skills, #education, #projects, #contact {
         margin-top: 15vh;
     }
     .profile {
