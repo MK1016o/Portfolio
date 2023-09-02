@@ -1,0 +1,111 @@
+@media screen and (max-width: 1020px) {
+    .name {
+        display: none;
+    }
+    .large-text {
+        font-size: 2.5rem;
+    }
+    .small-text {
+        font-size: 1rem;
+    }
+    .input-info {
+        flex-direction: column;
+    }   
+    .input-info input, #subject, textarea {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .links {
+        display: none;
+    }
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+    #about, #skills, #education, #projects, #contact {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 703px) {
+    .nav-media {
+        top: 0;
+        right: auto;
+        left: auto;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .options {
+        flex-direction: row;
+    }
+    .home {
+        flex-direction: column;
+    }
+    #home, #about, #skills, #education, #projects, #contact {
+        margin-top: 15vh;
+    }
+    .profile {
+        padding: 3rem;
+        padding-block: 5rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .left-about, .right-about {
+        width: 70%;
+    }
+    .edu-container {
+        flex-direction: column;
+        padding-inline: 3rem;
+    }
+    .edu-box {
+        width: 90%;
+    }
+    .input-info input, #subject, textarea {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    .nav-about {
+        display: none;
+    }
+    .btn-about {
+        display: inline;
+    }
+    .right-about {
+        margin: 0;
+    }
+    .options {
+        align-items: center;
+        justify-content: center;
+    }
+    .options a {
+        margin: 0;
+        margin: 0.3rem;
+    }
+    .red {
+        margin-left: 8rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .proj {
+        width: 50vw;
+        height: 50vw;
+    }
+    .profile-img {
+        display: none;
+    }
+    .profile {
+        padding-inline: 2rem;
+    }
+    .right-about {
+        width: 50%;
+        margin: 2rem;
+        flex-direction: column;
+        gap: 0;
+    }
+}

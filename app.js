@@ -35,16 +35,16 @@ function liSkill(src, data) {
 
 function skillMedia() {
     const ul = document.createElement('ul');
-    ul.appendChild(liSkill('html.png', 'HTML'));
-    ul.appendChild(liSkill('css.png', 'CSS'));
-    ul.appendChild(liSkill('js.png', 'Java Script'));
-    ul.appendChild(liSkill('python.png', 'Python'));
-    ul.appendChild(liSkill('c.png', 'C'));
-    ul.appendChild(liSkill('c++.png', 'C++'));
-    ul.appendChild(liSkill('java.png', 'Java'));
-    ul.appendChild(liSkill('mySQL.png', 'MySQL'));
-    ul.appendChild(liSkill('git.png', 'GIT'));
-    ul.appendChild(liSkill('github.png', 'GitHub'));
+    ul.appendChild(liSkill('./Images/html.png', 'HTML'));
+    ul.appendChild(liSkill('./Images/css.png', 'CSS'));
+    ul.appendChild(liSkill('./Images/js.png', 'Java Script'));
+    ul.appendChild(liSkill('./Images/python.png', 'Python'));
+    ul.appendChild(liSkill('./Images/c.png', 'C'));
+    ul.appendChild(liSkill('./Images/c++.png', 'C++'));
+    ul.appendChild(liSkill('./Images/java.png', 'Java'));
+    ul.appendChild(liSkill('./Images/mySQL.png', 'MySQL'));
+    ul.appendChild(liSkill('./Images/git.png', 'GIT'));
+    ul.appendChild(liSkill('./Images/github.png', 'GitHub'));
     skillContainer.innerHTML = '';
     skillContainer.append(ul);
   }
@@ -56,47 +56,47 @@ function skillMedia() {
         skillMedia();
     } else {
         skillContainer.innerHTML = `<div class="box">
-        <img src="html.png" alt="HTML" />
+        <img src="./Images/html.png" alt="HTML" />
         <p>HTML</p>
       </div>
       <div class="box">
-        <img src="css.png" alt="CSS" />
+        <img src="./Images/css.png" alt="CSS" />
         <p>CSS</p>
       </div>
       <div class="box">
-        <img src="bootstrap.png" alt="BootStrap" />
+        <img src="./Images/bootstrap.png" alt="BootStrap" />
         <p>BootStrap</p>
       </div>
       <div class="box">
-        <img src="js.png" alt="JS" />
+        <img src="./Images/js.png" alt="JS" />
         <p>Java Script</p>
       </div>
       <div class="box">
-        <img src="python.png" alt="Python" />
+        <img src="./Images/python.png" alt="Python" />
         <p>Python</p>
       </div>
       <div class="box">
-        <img src="c.png" alt="C" />
+        <img src="./Images/c.png" alt="C" />
         <p>C</p>
       </div>
       <div class="box">
-        <img src="c++.png" alt="C++" />
+        <img src="./Images/c++.png" alt="C++" />
         <p>C++</p>
       </div>
       <div class="box">
-        <img src="java.png" alt="Java" />
+        <img src="./Images/java.png" alt="Java" />
         <p>Java</p>
       </div>
       <div class="box">
-        <img src="mySQL.png" alt="MySQL" />
+        <img src="./Images/mySQL.png" alt="MySQL" />
         <p>MySQL</p>
       </div>
       <div class="box">
-        <img src="git.png" alt="GIT" />
+        <img src="./Images/git.png" alt="GIT" />
         <p>GIT</p>
       </div>
       <div class="box">
-        <img src="github.png" alt="GitHub" />
+        <img src="./Images/github.png" alt="GitHub" />
         <p>GitHub</p>
       </div>`
         ;
