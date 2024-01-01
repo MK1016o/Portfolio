@@ -6,6 +6,7 @@ Welcome to my personal portfolio website! I'm Mukul, and this site serves as a s
 
 ### Projects
 
+<<<<<<< HEAD
 #### WEB RTC
 
 - **Description**: Experience seamless real-time communication with our WebRTC-powered platform. Enjoy high-quality video streaming, instant messaging, screen sharing, and more. Whether it's remote collaboration, virtual events, or customer support, our solution, integrated with Agora for reliability, brings people together effortlessly. With robust security measures and a customizable interface, connect and collaborate without boundaries.
@@ -29,6 +30,25 @@ Welcome to my personal portfolio website! I'm Mukul, and this site serves as a s
 - **Description**: Enjoy the classic game of Tic Tac Toe in a modern, interactive way! Our app offers timeless entertainment with a sleek interface and multiplayer functionality. Challenge friends or play against the AI for strategic fun anytime, anywhere. Experience the nostalgic thrill of this beloved game with intuitive controls and engaging visuals. Simple yet addictive, our Tic Tac Toe app promises endless hours of competitive enjoyment for players of all ages.
 - **Demo**: [Live Preview](https://tic-tac-toe-mk1016o.netlify.app/)
 - **GitHub Repository**: [GitHub Repository](https://github.com/MK1016o/Tic-Tac-Toe)
+=======
+#### Simon Says Game
+
+- **Description**: A classic Simon Says memory game implemented in JavaScript, HTML, and CSS. Test your memory and try to repeat the pattern Simon creates!
+- **Demo**: [Simon Says Game Demo](https://simon-say-game-mk1016o.netlify.app/)
+- **GitHub Repository**: [Simon Says GitHub Repository](https://github.com/MK1016o/Simon-Says)
+
+#### To-Do List
+
+- **Description**: A simple web-based To-Do List application using HTML, CSS, and JavaScript. Stay organized and manage your tasks with ease.
+- **Demo**: [To-Do List Demo](https://to-do-list-mk1016o.netlify.app/)
+- **GitHub Repository**: [To-Do List GitHub Repository](https://github.com/MK1016o/To-Do-List)
+
+#### Tic-Tac-Toe Game
+
+- **Description**: Enjoy a game of Tic-Tac-Toe (Noughts and Crosses) with this web-based implementation using HTML, CSS, and JavaScript. Play against a friend or challenge yourself!
+- **Demo**: [Tic-Tac-Toe Game Demo](https://tic-tac-toe-mk1016o.netlify.app/)
+- **GitHub Repository**: [Tic-Tac-Toe GitHub Repository](https://github.com/MK1016o/Tic-Tac-Toe)
+>>>>>>> b5bf0774f5ba56037dcc6e9efa822a8a0ed7db82
 
 ### Skills
 
@@ -44,12 +64,20 @@ Welcome to my personal portfolio website! I'm Mukul, and this site serves as a s
 
 ### Resume
 
+<<<<<<< HEAD
 You can view or download my resume [here](https://drive.google.com/file/d/1EBrMCEKWDQc78TYi2Ftdno7pqVedH6aw/view?usp=drive_link
+=======
+You can view or download my resume [here](https://drive.google.com/file/d/11EVk-haNq_lkLvFmJ_U3BtBIXW9iBYfv/view).
+>>>>>>> b5bf0774f5ba56037dcc6e9efa822a8a0ed7db82
 
 ### Contact Information
 
 - Email: [mukulsahu966@gmail.com](mailto:mukulsahu966@gmail.com)
+<<<<<<< HEAD
 - LinkedIn: [Mukul .](https://www.linkedin.com/in/mk1016o/)
+=======
+- LinkedIn: [Mukul .](https://www.linkedin.com/in/mukul1016o/)
+>>>>>>> b5bf0774f5ba56037dcc6e9efa822a8a0ed7db82
 - GitHub: [Mukul](https://github.com/MK1016o)
 
 ## Customization
