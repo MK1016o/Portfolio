@@ -1,4 +1,4 @@
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1238px) {
     .name {
         display: none;
     }
@@ -8,26 +8,45 @@
     .small-text {
         font-size: 1rem;
     }
-    .input-info {
-        flex-direction: column;
-    }   
-    .input-info input, #subject, textarea {
-        width: 60vw;
+    .links {
+        display: none;
+    }
+    .contacts button {
+        margin-inline: 0.5em;
+    }
+    .contact-link {
+        margin: 0.5em;
     }
 }
 
 @media screen and (max-width: 896px) {
-    .links {
-        display: none;
-    }
     .options {
         display: flex;
         flex-direction: column;
     }
-    #about, #skills, #education, #projects, #contact {
+    .profile-img {
+        display: none;
+    }
+    #about, #education, #projects, #contact {
         padding-top: 5vh;
     }
+    .about .right-about {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .project-even {
+        margin-left: 0em;
+    }
+    .project .right-part {
+        display: none
+    }
+    .left-part, .right-part {
+        width: auto;
+    }
 }
+
 @media screen and (max-width: 703px) {
     .nav-media {
         top: 0;
@@ -37,26 +56,14 @@
         justify-content: center;
         align-items: center;
     }
-    .options {
-        flex-direction: row;
-    }
-    .home {
-        flex-direction: column;
-    }
-    #about, #skills, #education, #projects, #contact {
+    #about, #education, #projects, #contact {
         padding-top: 15vh;
-    }
-    #skills h3 {
-        margin-top: 3rem;
     }
     .profile {
         padding: 3rem;
         padding-block: 5rem;
     }
-    .container {
-        flex-direction: column;
-    }
-    .left-about, .right-about {
+    .left-about {
         width: 70%;
     }
     .edu-container {
@@ -66,21 +73,6 @@
     .edu-box {
         width: 90%;
     }
-    .input-info input, #subject, textarea {
-        width: 80vw;
-    }
-}
-
-@media screen and (max-width: 623px) {
-    .nav-about {
-        display: none;
-    }
-    .btn-about {
-        display: inline;
-    }
-    .right-about {
-        margin: 0;
-    }
     .options {
         align-items: center;
         justify-content: center;
@@ -89,26 +81,11 @@
         margin: 0;
         margin: 0.3rem;
     }
-    .red {
-        margin-left: 8rem;
-    }
 }
 
 @media screen and (max-width: 430px) {
     .proj {
         width: 50vw;
         height: 50vw;
-    }
-    .profile-img {
-        display: none;
-    }
-    .profile {
-        padding-inline: 2rem;
-    }
-    .right-about {
-        width: 50%;
-        margin: 2rem;
-        flex-direction: column;
-        gap: 0;
     }
 }

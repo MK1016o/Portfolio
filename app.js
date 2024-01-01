@@ -1,197 +1,142 @@
 const navHome = document.querySelector('.nav-home');
 const navAbout = document.querySelector('.nav-about');
-const navSkill = document.querySelector('.nav-skill');
 const navEducation = document.querySelector(".nav-edu");
 const navProject = document.querySelector('.nav-project');
 const navContact = document.querySelector('.nav-contact');
+
 const btn = document.querySelector('.btn-about');
+
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
-const skill = document.querySelector('.skills');
 const education = document.querySelector(".education");
 const project = document.querySelector('.projects');
 const contact = document.querySelector('.contacts');
+
 const nav = document.querySelector('.nav');
-const skillContainer = document.querySelector('.skill-container');
 
 const navLists = document.querySelectorAll('.navlist');
 
+const burger = document.querySelector('.hamburger');
+const line1 = document.querySelector('.line1')
+const line2 = document.querySelector('.line2')
+const line3 = document.querySelector('.line3')
+
+
 let start = 1;
 
-function liSkill(src, data) {
-    const li = document.createElement('li');
-    li.classList.add('skill-list')
-    const img = document.createElement('img')
-    img.setAttribute('src', src);
-    img.classList.add('media-skill-img');
-    const para = document.createElement('p');
-    para.innerText = data;
-    para.style.fontSize = '1.5rem';
-    li.appendChild(img);
-    li.appendChild(para);
-    return li;
-
-}
-
-function skillMedia() {
-    const ul = document.createElement('ul');
-    ul.appendChild(liSkill('./Images/html.png', 'HTML'));
-    ul.appendChild(liSkill('./Images/css.png', 'CSS'));
-    ul.appendChild(liSkill('./Images/js.png', 'Java Script'));
-    ul.appendChild(liSkill('./Images/python.png', 'Python'));
-    ul.appendChild(liSkill('./Images/c.png', 'C'));
-    ul.appendChild(liSkill('./Images/c++.png', 'C++'));
-    ul.appendChild(liSkill('./Images/java.png', 'Java'));
-    ul.appendChild(liSkill('./Images/mySQL.png', 'MySQL'));
-    ul.appendChild(liSkill('./Images/git.png', 'GIT'));
-    ul.appendChild(liSkill('./Images/github.png', 'GitHub'));
-    skillContainer.innerHTML = '';
-    skillContainer.append(ul);
-  }
-  
-  const mediaQuery2 = () => {
-    const screenWidth = window.innerWidth;
-    if(screenWidth <= 623) {
-      console.log(skillContainer);
-        skillMedia();
-    } else {
-        skillContainer.innerHTML = `<div class="box">
-        <img src="./Images/html.png" alt="HTML" />
-        <p>HTML</p>
-      </div>
-      <div class="box">
-        <img src="./Images/css.png" alt="CSS" />
-        <p>CSS</p>
-      </div>
-      <div class="box">
-        <img src="./Images/bootstrap.png" alt="BootStrap" />
-        <p>BootStrap</p>
-      </div>
-      <div class="box">
-        <img src="./Images/js.png" alt="JS" />
-        <p>Java Script</p>
-      </div>
-      <div class="box">
-        <img src="./Images/python.png" alt="Python" />
-        <p>Python</p>
-      </div>
-      <div class="box">
-        <img src="./Images/c.png" alt="C" />
-        <p>C</p>
-      </div>
-      <div class="box">
-        <img src="./Images/c++.png" alt="C++" />
-        <p>C++</p>
-      </div>
-      <div class="box">
-        <img src="./Images/java.png" alt="Java" />
-        <p>Java</p>
-      </div>
-      <div class="box">
-        <img src="./Images/mySQL.png" alt="MySQL" />
-        <p>MySQL</p>
-      </div>
-      <div class="box">
-        <img src="./Images/git.png" alt="GIT" />
-        <p>GIT</p>
-      </div>
-      <div class="box">
-        <img src="./Images/github.png" alt="GitHub" />
-        <p>GitHub</p>
-      </div>`
-        ;
-    }
-};
-mediaQuery2();
-window.addEventListener('resize', mediaQuery2);
-
-function addNav() {
+function addNavigat() {
     for(let i = 0; i < navLists.length; i ++) {
         navLists[i].classList.add('navigat')
     }
 }
-function removeNav() {
+function removeNavigat() {
     for(let i = 0; i < navLists.length; i ++) {
         navLists[i].classList.remove('navigat');
     }
 }
-
-function none() {
-    home.classList.add('none');
-    about.classList.add('none');
-    skill.classList.add('none');
-    education.classList.add('none');
-    project.classList.add('none');
-    contact.classList.add('none');
+function removeNavList() {
+  for(let i = 0; i < navLists.length; i ++) {
+    navLists[i].classList.toggle('none');
+  }
 }
+
+const navigation = [home, about, education, project, contact]
+
+// Display None
+function none() {
+  for(let i = 0; i < navigation.length; i++) {
+    navigation[i].classList.add('none');
+  }
+}
+function removeNone() {
+  for(let i = 0; i < navigation.length; i++) {
+    navigation[i].classList.remove('none');
+  }
+}
+
 function mediaIcon() {
-    navHome.innerHTML = '<i class="fa-solid fa-house"></i>';
-    navAbout.innerHTML = '<i class="fa-solid fa-user"></i>';
-    navSkill.innerHTML = '<i class="fa-solid fa-briefcase"></i>';
-    navEducation.innerHTML = '<i class="fa-solid fa-user-graduate"></i>';
-    navProject.innerHTML = '<i class="fa-solid fa-diagram-project"></i>';
-    navContact.innerHTML = '<i class="fa-solid fa-paper-plane"></i>';
-  }
-  function mediaText() {
-    navHome.innerText = 'Home';
-    navAbout.innerText = 'About';
-    navSkill.innerText = 'Skills';
-    navEducation.innerText = 'Education';
-    navProject.innerText = 'Projects';
-    navContact.innerText = 'Contact';
-  }
+  navHome.innerHTML = '<i class="fa-solid fa-house"></i>';
+  navAbout.innerHTML = '<i class="fa-solid fa-user"></i>';
+  navEducation.innerHTML = '<i class="fa-solid fa-user-graduate"></i>';
+  navProject.innerHTML = '<i class="fa-solid fa-diagram-project"></i>';
+  navContact.innerHTML = '<i class="fa-solid fa-paper-plane"></i>';
+}
+
+function mediaText() {
+  navHome.innerText = 'HOME';
+  navAbout.innerText = 'ABOUT';
+  navEducation.innerText = 'EDUCATION';
+  navProject.innerText = 'PROJECTS';
+  navContact.innerText = 'CONTACT';
+}
   
-  const mediaQuery = () => {
+const mediaQuery = () => {
     const screenWidth = window.innerWidth;
-    if(screenWidth <= 896) {
+    if(screenWidth <= 703) {
+      nav.classList.remove('nav-media');
+      removeNavigat();
+      mediaText();
+      removeNone();
+      removeNavList()
+      start = 1;
+      burger.classList.remove('none')
+      line1.classList.toggle('left')
+      line2.classList.toggle('none')
+      line3.classList.toggle('right')
+    }
+    else if(screenWidth <= 896 && screenWidth >= 704) {
       if(start == 1) {
         none();
-          home.classList.remove('none');
-          start ++;  
-        }
-        mediaIcon();
-        navHome.addEventListener('click', () => {
-            none();
-            home.classList.remove('none');
-        })
-        navAbout.addEventListener('click', () => {
-            none();
-            about.classList.remove('none');
-        })
-        btn.addEventListener('click', () => {
-            none();
-            about.classList.remove('none');
-        })
-        navSkill.addEventListener('click', () => {
-            none();
-            skill.classList.remove('none');
-        })
-        navEducation.addEventListener('click', () => {
-            none();
-            education.classList.remove('none');
-        })
-        navProject.addEventListener('click', () => {
-            none();
-            project.classList.remove('none');
-        })
-        navContact.addEventListener('click', () => {
-            none();
-            contact.classList.remove('none');
-        })
-        nav.classList.add('nav-media');
-        addNav();
-    } else {
-        nav.classList.remove('nav-media');
-        removeNav();
-        mediaText();
         home.classList.remove('none');
+        start ++;  
+      }
+      mediaIcon();
+      navHome.addEventListener('click', () => {
+        none();
+        home.classList.remove('none');
+      })
+      navAbout.addEventListener('click', () => {
+        none();
         about.classList.remove('none');
-        skill.classList.remove('none');
+      })
+      btn.addEventListener('click', () => {
+        none();
+        about.classList.remove('none');
+      })
+      navEducation.addEventListener('click', () => {
+        none();
         education.classList.remove('none');
+      })
+      navProject.addEventListener('click', () => {
+        none();
         project.classList.remove('none');
+      })
+      navContact.addEventListener('click', () => {
+        none();
         contact.classList.remove('none');
-    
+      })
+      nav.classList.add('nav-media');
+      addNavigat();
+      burger.classList.add('none')
+
+    } else {
+      nav.classList.remove('nav-media');
+      removeNavigat();
+      mediaText();
+      removeNone();
+      start = 1;
+      burger.classList.add('none')
     }
 }
 mediaQuery();
 window.addEventListener('resize', mediaQuery);
+burger.addEventListener('click', () => {
+  removeNavList()
+  line1.classList.toggle('left')
+  line2.classList.toggle('none')
+  line3.classList.toggle('right')
+})
+
+line1.classList.remove('left')
+line2.classList.remove('none')
+line3.classList.remove('right')
