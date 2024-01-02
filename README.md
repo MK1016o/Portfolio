@@ -41,6 +41,7 @@ Welcome to my personal portfolio website! I'm Mukul, and this site serves as a s
 - Java
 - Python
 - C/C++
+- MERN Stack Development
 
 ### Resume
 
