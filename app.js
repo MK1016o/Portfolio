@@ -77,12 +77,8 @@ const mediaQuery = () => {
       removeNavigat();
       mediaText();
       removeNone();
-      removeNavList()
       start = 1;
       burger.classList.remove('none')
-      line1.classList.toggle('left')
-      line2.classList.toggle('none')
-      line3.classList.toggle('right')
     }
     else if(screenWidth <= 896 && screenWidth >= 704) {
       if(start == 1) {
@@ -90,6 +86,7 @@ const mediaQuery = () => {
         home.classList.remove('none');
         start ++;  
       }
+      removeNavList()
       mediaIcon();
       navHome.addEventListener('click', () => {
         none();
@@ -119,9 +116,10 @@ const mediaQuery = () => {
       addNavigat();
       burger.classList.add('none')
 
-    } else {
+    } else if (screenWidth >= 704) {
       nav.classList.remove('nav-media');
       removeNavigat();
+      removeNavList()
       mediaText();
       removeNone();
       start = 1;
@@ -136,7 +134,4 @@ burger.addEventListener('click', () => {
   line2.classList.toggle('none')
   line3.classList.toggle('right')
 })
-
-line1.classList.remove('left')
-line2.classList.remove('none')
-line3.classList.remove('right')
+removeNavList()

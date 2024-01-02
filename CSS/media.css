@@ -81,11 +81,29 @@
         margin: 0;
         margin: 0.3rem;
     }
+    .contacts::before, .contacts::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 430px) {
     .proj {
         width: 50vw;
         height: 50vw;
+    }
+    #home, #about, #education, #projects {
+        padding-inline: 1em;
+        margin-left: 5em;
+        width: 100vw;
+    }
+    #contact {
+        width: 150vw;
+        border-radius: 20px;
+    }
+    .left-about {
+        width: 100vw;
+    }
+    .edu-box {
+        width: 100vw;
     }
 }
