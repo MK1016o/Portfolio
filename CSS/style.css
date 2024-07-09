@@ -9,6 +9,7 @@
 :root {
     --blackish: #101630;
     --nav-blue: #191d2b3e;
+    --black-back: #4247563e;
     --blue-white: #98d3fa;
     --hover-white: #b8d8ed;
     --greenigh-white: #4af2cd;
@@ -133,7 +134,7 @@ button:hover {
 /* About */
 .about {
     min-height: 100vh;
-    margin: 1em;
+    background-color: var(--black-back);
 }
 h3 {
     margin-block: 2em;
@@ -231,6 +232,7 @@ ul li span {
 /* Projects */
 .projects {
     min-height: 100vh;
+    padding-bottom: 10rem;
 }
 .projects h3::before {
     content: "MY PROJECTS";
@@ -301,6 +303,8 @@ ul li span {
 /* Education */
 .education {
     min-height: 100vh;
+    background-color: var(--black-back);
+    padding-bottom: 10rem;
 }
 .education h3::before {
     content: "MY LEARNINGS";
@@ -376,7 +380,6 @@ ul li span {
     min-height: 100vh;
     background: rgb(74,55,196);
     background: linear-gradient(90deg, rgba(74, 55, 196, 0.109) 11%, rgba(75, 97, 206, 0.2) 41%, rgba(77, 152, 214, 0.216) 100%);
-    opacity: 0.;
     position: relative;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
@@ -511,4 +514,8 @@ a i:hover {
 }
 .none {
     display: none;
+}
+
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1s;
 }

@@ -84,6 +84,10 @@
     .contacts::before, .contacts::after {
         display: none;
     }
+    .contacts {
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
 }
 
 @media screen and (max-width: 430px) {
