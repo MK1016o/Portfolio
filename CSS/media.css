@@ -29,6 +29,7 @@
     }
     #about, #education, #projects, #contact {
         padding-top: 5vh;
+        overflow-x: hidden;
     }
     .about .right-about {
         display: none;
@@ -45,6 +46,10 @@
     .left-part, .right-part {
         width: auto;
     }
+    .contacts {
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
 }
 
 @media screen and (max-width: 703px) {
@@ -52,7 +57,6 @@
         top: 0;
         right: auto;
         left: auto;
-        width: 100vw;
         justify-content: center;
         align-items: center;
     }
@@ -84,30 +88,32 @@
     .contacts::before, .contacts::after {
         display: none;
     }
-    .contacts {
-        border-top-left-radius: 5%;
-        border-top-right-radius: 5%;
-    }
 }
 
 @media screen and (max-width: 430px) {
+    .intro {
+        font-size: 2rem;
+    }
+    .intro b {
+        font-size: 3rem;
+    }
+    button {
+        font-size: 1rem;
+    }
     .proj {
-        width: 50vw;
         height: 50vw;
     }
     #home, #about, #education, #projects {
         padding-inline: 1em;
-        margin-left: 5em;
-        width: 100vw;
+        overflow-x: hidden;
     }
     #contact {
-        width: 150vw;
         border-radius: 20px;
     }
     .left-about {
-        width: 100vw;
+        width: 80vw;
     }
     .edu-box {
-        width: 100vw;
+        width: 80vw;
     }
 }

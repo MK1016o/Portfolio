@@ -9,7 +9,7 @@
 :root {
     --blackish: #101630;
     --nav-blue: #191d2b3e;
-    --black-back: #4247563e;
+    --black-back: rgb(18 26 64);
     --blue-white: #98d3fa;
     --hover-white: #b8d8ed;
     --greenigh-white: #4af2cd;
@@ -18,8 +18,8 @@
 }
 
 body {
-    background: var(--blackish);
-    background-repeat: no-repeat;
+    background-color: var(--blackish);
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -32,7 +32,7 @@ body {
     flex-wrap: nowrap;
     background-color: var(--nav-blue);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     opacity: 0.8;
     z-index: 2;
 }
@@ -47,7 +47,6 @@ body {
 a {
     padding-inline: 1em;
     color: white;
-    letter-spacing: 0.2em;
     text-decoration: none;
 }
 .options a {
@@ -71,6 +70,7 @@ a i {
 
 /* Home */
 .home {
+    background-color: var(--blackish);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,9 @@ a i {
 }
 .intro b {
     font-size: 5rem;
-    color: var(--sky-blue);
+    background: -webkit-radial-gradient(rgba(20,212,247,1), rgba(64,56,167,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 button {
     margin-block: 1em;
@@ -109,7 +111,6 @@ button {
     transition: all 0.25s ease;
 }
 button:hover {
-    transform: scale(1.1);
     border-color: var(--sky-blue);
 }
 .profile-img img {
@@ -133,6 +134,7 @@ button:hover {
 
 /* About */
 .about {
+    background-color: var(--black-back);
     min-height: 100vh;
     background-color: var(--black-back);
 }
@@ -210,7 +212,7 @@ ul li span {
     transition: all 0.2s ease;
 }
 .about-item:hover {
-    background-color: #b8c3f8;
+    background-color: #ffffff;
     border-left: 5px solid rgba(17,234,253,1);
     border-bottom: 5px solid rgba(17,234,253,1);
     border-right: 5px solid rgb(74, 32, 179);
@@ -231,6 +233,7 @@ ul li span {
 
 /* Projects */
 .projects {
+    background-color: var(--blackish);
     min-height: 100vh;
     padding-bottom: 10rem;
 }
@@ -379,7 +382,7 @@ ul li span {
 .contacts {
     min-height: 100vh;
     background: rgb(74,55,196);
-    background: linear-gradient(90deg, rgba(74, 55, 196, 0.109) 11%, rgba(75, 97, 206, 0.2) 41%, rgba(77, 152, 214, 0.216) 100%);
+    background: linear-gradient(90deg, rgba(74, 55, 196) 11%, rgba(75, 97, 206) 41%, rgba(77, 152, 214) 100%);
     position: relative;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
@@ -419,25 +422,33 @@ ul li span {
 }
 .contacts .right-part {
     height: auto;
+    border: none
 }
 input, textarea {
     width: 94%;
     padding: 1em;
     margin: 1em;
     font-size: 1rem;
-    color: white;
-    background-color: var(--blackish);
+    color: #141414;
+    background-color: rgb(196, 192, 185);
     border-radius: 10px;
 }
-.contacts button {
+.form-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-button button {
     opacity: 0.8;
     margin-inline: 2em;
     padding: 0.5em 1em;
     background: var(--sky-blue);
     background: linear-gradient(90deg, rgba(20, 213, 247, 0.5) 13%, rgba(63, 56, 167, 0.527) 89%);
+    transition: all ease 0.5s;
+    border: 1px solid black;
 }
-.contacts button:hover {
-    transform: scale(1);
+.form-button button:hover {
+    transform: scale(1.1);
 }
 .container ul {
     list-style: none;
