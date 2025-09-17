@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mukul | Portfolio</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- DotLottie -->
+    <script
+      type="module"
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+    ></script>
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="relative flex flex-col items-center gap-4 p-8">
+        <div
+          class="w-12 h-12 rounded-full border-4 border-t-transparent border-[#6366f1] animate-spin"
+        ></div>
+        <span class="text-gray-200 text-sm">Loading...</span>
+      </div>
+    </div>
+    <!-- Background -->
+    <div class="blob-container">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed w-full top-0 z-50 scrolled transition-all duration-500"
+    >
+      <div
+        class="container mx-auto px-5 lg:px-10 flex items-center justify-between h-16"
+      >
+        <!-- Logo -->
+        <a
+          href="#home"
+          class="text-xl font-bold bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent"
+        >
+          Mukul
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-toggle" class="md:hidden p-2 text-white">
+          &#9776;
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden max-h-0 overflow-hidden transition-all duration-300"
+      >
+        <div class="flex flex-col px-4 py-6 space-y-4">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#portofolio" class="mobile-nav-link">Portfolio</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section
+      class="relative min-h-screen flex items-center justify-center px-6 py-32 lg:px-20"
+      id="home"
+    >
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full relative z-10"
+      >
+        <!-- Left Column -->
+        <div class="space-y-6" data-aos="fade-right">
+          <span
+            class="px-4 py-2 bg-purple-700/30 rounded-full text-purple-400 text-sm font-medium inline-block"
+          >
+            <i data-lucide="sparkles" class="inline w-4 h-4"></i> Available for
+            work
+          </span>
+
+          <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">
+            Hi, I'm <span class="text-purple-400">Mukul</span>
+            <br />
+            <span class="typing-text text-gray-300" id="typing"></span>
+          </h1>
+
+          <p class="text-gray-400 text-lg max-w-xl">
+            I’m a Full Stack Developer passionate about building scalable applications using React, Node.js, and cloud platforms
+          </p>
+
+          <div class="flex gap-4">
+            <a
+              href="#about"
+              class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg shadow-lg transition"
+              >About Me</a
+            >
+            <a
+              href="mailto:mukulsahu966@gmail.com"
+              class="px-6 py-3 border border-gray-500 rounded-lg hover:bg-gray-800 transition"
+              >Contact</a
+            >
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <a
+              href="https://github.com/MK1016o"
+              target="_blank"
+              class="hover:text-purple-400"
+              ><i data-lucide="github" class="w-6 h-6"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mk1016o/"
+              target="_blank"
+              class="hover:text-purple-400"
+              ><i data-lucide="linkedin" class="w-6 h-6"></i
+            ></a>
+            <a href="mailto:mukulsahu966@gmail.com" class="hover:text-purple-400"
+              ><i data-lucide="mail" class="w-6 h-6"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex justify-center" data-aos="fade-left">
+          <dotlottie-player
+            src="AnimationLottie.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 400px"
+            loop
+            autoplay
+          >
+          </dotlottie-player>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="relative px-6 lg:px-20 mt-20 text-white z-10" id="about">
+      <!-- Header -->
+      <div class="text-center mb-8" data-aos="zoom-in-up">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+        >
+          About Me
+        </h2>
+        <p
+          class="mt-2 text-gray-400 text-lg flex items-center justify-center gap-2"
+        >
+          <i data-lucide="sparkles" class="w-5 h-5 text-purple-400"></i>
+          From concept to code, making apps come alive.
+          <i data-lucide="sparkles" class="w-5 h-5 text-purple-400"></i>
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <!-- Text -->
+        <div data-aos="fade-right">
+          <h3 class="text-3xl sm:text-4xl font-bold">
+            Hello, I’m <span class="text-purple-400">Mukul</span>
+          </h3>
+          <p class="text-gray-400 mt-4 text-justify">
+            I am a Full Stack Developer with expertise in React, Node.js, and modern web technologies, passionate about building scalable and efficient applications.
+          </p>
+
+          <!-- Quote -->
+          <div
+            class="relative bg-gradient-to-br from-[#6366f1]/10 to-[#a855f7]/10 border border-[#6366f1]/30 rounded-2xl p-4 mt-6 backdrop-blur-md shadow-xl"
+          >
+            <blockquote class="text-gray-300 italic text-sm text-center">
+              “Building digital solutions that grow with your ideas.”
+            </blockquote>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex gap-4 mt-6">
+            <a
+              href="./Mukul_Resume.pdf"
+              target="_blank"
+              class="px-6 py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium hover:scale-105 transition flex items-center gap-2"
+            >
+              <i data-lucide="file-text" class="w-5 h-5"></i> Download CV
+            </a>
+            <a
+              href="#portfolio"
+              class="px-6 py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] hover:bg-[#a855f7]/10 font-medium transition flex items-center gap-2"
+            >
+              <i data-lucide="code" class="w-5 h-5"></i> View Projects
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="flex justify-center" data-aos="fade-up">
+          <div class="relative group">
+            <!-- glowing orbs -->
+            <div class="absolute -inset-6 opacity-30 hidden sm:block">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 rounded-full blur-2xl animate-spin-slower"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-l from-fuchsia-500 via-rose-500 to-pink-600 rounded-full blur-2xl animate-pulse-slow opacity-50"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-blue-600 via-cyan-500 to-teal-400 rounded-full blur-2xl animate-float opacity-50"
+              ></div>
+            </div>
+            <div
+              class="w-72 h-72 rounded-full overflow-hidden shadow-lg relative"
+            >
+              <img
+                src="./Images/Mukul.png"
+                alt="Profile"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid md:grid-cols-3 gap-6 mt-16" data-aos="fade-up">
+        <div
+          class="bg-gray-900/50 rounded-2xl p-6 border border-white/10 text-center hover:scale-105 transition"
+        >
+          <i data-lucide="code" class="w-10 h-10 mx-auto text-purple-400"></i>
+          <h4 class="text-3xl font-bold mt-2">10+</h4>
+          <p class="text-gray-400">Projects Completed</p>
+        </div>
+        <div
+          class="bg-gray-900/50 rounded-2xl p-6 border border-white/10 text-center hover:scale-105 transition"
+        >
+          <i data-lucide="award" class="w-10 h-10 mx-auto text-purple-400"></i>
+          <h4 class="text-3xl font-bold mt-2">10+</h4>
+          <p class="text-gray-400">Certificates Earned</p>
+        </div>
+        <div
+          class="bg-gray-900/50 rounded-2xl p-6 border border-white/10 text-center hover:scale-105 transition"
+        >
+          <i data-lucide="globe" class="w-10 h-10 mx-auto text-purple-400"></i>
+          <h4 class="text-3xl font-bold mt-2">1+</h4>
+          <p class="text-gray-400">Years Experience</p>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO SECTION -->
+    <section
+      class="relative px-6 lg:px-20 mt-20 text-white z-10"
+      id="portfolio"
+    >
+      <!-- Header -->
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+        >
+          Portfolio Showcase
+        </h2>
+        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">
+          Discover my journey through projects, certifications, and full-stack expertise.
+        </p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex justify-center mb-8 space-x-4">
+        <button
+          class="tab-btn px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 transition text-sm font-medium"
+          data-tab="projects"
+        >
+          Projects
+        </button>
+        <button
+          class="tab-btn px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition text-sm font-medium"
+          data-tab="certificates"
+        >
+          Certificates
+        </button>
+        <button
+          class="tab-btn px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition text-sm font-medium"
+          data-tab="techstack"
+        >
+          Tech Stack
+        </button>
+      </div>
+
+      <!-- Projects -->
+      <div class="tab-content" id="projects">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Example Project Card -->
+          <div
+            class="bg-gray-900/50 rounded-xl overflow-hidden border border-white/10 shadow hover:scale-105 transition"
+            data-aos="fade-up"
+          >
+            <img
+              src="./Images/Recipe-Sharing.png"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-purple-400">Recipe Sharing Platform</h3>
+              <p class="text-gray-400 mt-2">
+                Developed a full-stack Recipe Sharing Platform with React, Mono, Prisma, and JWT authentication.
+              </p>
+              <a
+                href="https://github.com/MK1016o/Recipe-Sharing-Platform"
+                target="_blank"
+                class="inline-block mt-3 text-sm text-purple-400 hover:underline"
+                >View Github →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-900/50 rounded-xl overflow-hidden border border-white/10 shadow hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="./Images/medium.png"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-purple-400">Medium-like Blogging Platform</h3>
+              <p class="text-gray-400 mt-2">
+                Developed a Medium-inspired full-stack blogging platform with React, Hono, Prisma, and JWT authentication.
+              </p>
+              <a
+                href="https://github.com/MK1016o/Medium"
+                target="_blank"
+                class="inline-block mt-3 text-sm text-purple-400 hover:underline"
+                >View Github →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-900/50 rounded-xl overflow-hidden border border-white/10 shadow hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./Images/Paytm.png"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-purple-400">Paytm Clone</h3>
+              <p class="text-gray-400 mt-2">
+                Built a Paytm-like digital payment platform with React, TailwindCSS, MongoDB, JWT authentication, and peer-to-peer transfers.
+              </p>
+              <a
+                href="https://github.com/MK1016o/paytm"
+                target="_blank"
+                class="inline-block mt-3 text-sm text-purple-400 hover:underline"
+                >View Github →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-900/50 rounded-xl overflow-hidden border border-white/10 shadow hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./Images/wanderlust.PNG"
+              alt="Project 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-purple-400">Wanderlust (Airbnb Clone)</h3>
+              <p class="text-gray-400 mt-2">
+                Developed an Airbnb-inspired rental platform with EJS, Bootstrap, Passport.js authentication, Cloudinary uploads, and Mapbox integration.
+              </p>
+              <a
+                href="https://github.com/MK1016o/wanderlust"
+                target="_blank"
+                class="inline-block mt-3 text-sm text-purple-400 hover:underline"
+                >View Github →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-900/50 rounded-xl overflow-hidden border border-white/10 shadow hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./Images/ezwears.PNG"
+              alt="Project 5"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-purple-400">Ezwears</h3>
+              <p class="text-gray-400 mt-2">
+                Built Ezwears, a clothing e-commerce clone with React, React Router, and TailwindCSS for seamless navigation and responsive design.
+              </p>
+              <a
+                href="https://github.com/MK1016o/ezwears"
+                target="_blank"
+                class="inline-block mt-3 text-sm text-purple-400 hover:underline"
+                >View Github →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-900/50 rounded-xl overflow-hidden border border-white/10 shadow hover:scale-105 transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./Images/mubble.PNG"
+              alt="Project 6"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-purple-400">Mubble (Chat Application)</h3>
+              <p class="text-gray-400 mt-2">
+                Built a WebRTC platform with Agora for video calls, messaging, screen sharing, and secure real-time collaboration.
+              </p>
+              <a
+                href="https://github.com/MK1016o/WebRTC"
+                target="_blank"
+                class="inline-block mt-3 text-sm text-purple-400 hover:underline"
+                >View Github →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="tab-content hidden" id="certificates">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+          >
+            <img src="./Images/EY.jpg" alt="Certificate 1" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img src="./Images/Veritech.png" alt="Certificate 2" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/WalmartIntershipProgram.jpg" alt="Certificate 3" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/Chegg.jpg" alt="Certificate 3" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/C-Programming Fundamentals.jpg" alt="Certificate 4" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/C-Structured Programming.jpg" alt="Certificate 5" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/C++-PartA.jpg" alt="Certificate 6" class="rounded-lg" />
+          </div>
+          <div
+            class="bg-gray-900/50 rounded-xl p-4 border border-white/10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/C++-PartB.jpg" alt="Certificate 7" class="rounded-lg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="tab-content hidden" id="techstack">
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-6">
+          <div class="flex flex-col items-center" data-aos="fade-up">
+            <img src="./Images/html.svg" alt="HTML" class="w-12 h-12" />
+            <p class="text-sm mt-2">HTML</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img src="./Images/css.svg" alt="CSS" class="w-12 h-12" />
+            <p class="text-sm mt-2">CSS</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="./Images/javascript.svg" alt="JavaScript" class="w-12 h-12" />
+            <p class="text-sm mt-2">JavaScript</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <img src="./Images/typescript.png" alt="TypeScript" class="w-12 h-12" />
+            <p class="text-sm mt-2">TypeScript</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="./Images/reactjs.svg" alt="React" class="w-12 h-12" />
+            <p class="text-sm mt-2">React</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="./Images/NextJS.png" alt="NextJS" class="w-12 h-12" />
+            <p class="text-sm mt-2">NextJS</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./Images/nodejs.svg" alt="NodeJS" class="w-12 h-12" />
+            <p class="text-sm mt-2">NodeJS</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./Images/expressjs.png" alt="ExpressJS" class="w-12 h-12" />
+            <p class="text-sm mt-2">ExpressJS</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./Images/MongoDB.png" alt="MongoDB" class="w-12 h-12" />
+            <p class="text-sm mt-2">MongoDB</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./Images/SQL.png" alt="SQL" class="w-12 h-12" />
+            <p class="text-sm mt-2">SQL</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <img src="./Images/tailwind.svg" alt="Tailwind" class="w-12 h-12" />
+            <p class="text-sm mt-2">TailwindCSS</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="./Images/GCP.png" alt="GCP" class="w-12 h-12" />
+            <p class="text-sm mt-2">GCP</p>
+          </div>
+          <div
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="./Images/AWS.png" alt="AWS" class="w-12 h-12" />
+            <p class="text-sm mt-2">AWS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="relative px-6 lg:px-20 mt-20 text-white z-10" id="contact">
+      <!-- Header -->
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+        >
+          Contact Me
+        </h2>
+        <p class="text-gray-400 mt-2 max-w-2xl mx-auto">
+          Have questions? Send me a message, and I'll reply shortly.
+        </p>
+      </div>
+
+      <!-- Contact Container -->
+      <div
+        class="grid justify-center items-center lg:grid-cols gap-10 items-start"
+      >
+        <!-- Contact Form -->
+        <div class="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-8">
+          <h3
+            class="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+          >
+            Contact
+          </h3>
+          <p class="text-gray-400 mb-8">
+            Anyone want to discuss it? Send me a message and let's talk.
+          </p>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="space-y-6"
+          >
+            <input type="hidden" name="access_key" value="418b7c43-eebf-408e-b785-7e3d1b77cf4e">
+
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                class="w-full p-4 bg-white/10 rounded-xl border border-white/20 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                class="w-full p-4 bg-white/10 rounded-xl border border-white/20 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Your message"
+                class="w-full resize-none p-4 bg-white/10 rounded-xl border border-white/20 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 h-40"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98]"
+            >
+              Submit
+            </button>
+          </form>
+
+          <!-- Social Links -->
+          <div class="mt-8 flex justify-center space-x-6">
+            <a
+              href="https://www.linkedin.com/in/mk1016o/"
+              target="_blank"
+              class="text-gray-400 hover:text-[#6366f1] transition"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/MK1016o"
+              target="_blank"
+              class="text-gray-400 hover:text-[#6366f1] transition"
+              >GitHub</a
+            >
+            <a
+              href="mailto:mukulsahhu966@gmail.com"
+              class="text-gray-400 hover:text-[#6366f1] transition"
+              >Email</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Loading Screen
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          const loader = document.getElementById("loading-screen");
+          loader.classList.add("hidden");
+        }, 500); // slight delay for better UX
+      });
+      AOS.init();
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
